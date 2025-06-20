@@ -9,7 +9,6 @@ public class IdGenerator {
     private static final TSID.Factory tsidFactory;
 
     static {
-
         Optional.ofNullable(System.getenv("tsid.node"))
                 .ifPresent(tsidNode -> System.setProperty("tsid.node", tsidNode));
 
@@ -20,7 +19,7 @@ public class IdGenerator {
     }
 
     private IdGenerator() {
-        // Private constructor to prevent instantiation
+
     }
 
     public static TSID generateTSID() {
