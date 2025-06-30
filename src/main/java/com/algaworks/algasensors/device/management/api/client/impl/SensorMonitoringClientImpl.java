@@ -7,8 +7,11 @@ import io.hypersistence.tsid.TSID;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
-@Component
+//@Component
 public class SensorMonitoringClientImpl implements SensorMonitoringClient {
+
+    // NOTA: Esta classe nao sera mais utilizada...
+    // foi substituida pela RestClientConfig e SensorMonitoringClient...
 
     private final RestClient restClient;
 
